@@ -17,6 +17,17 @@ public class TestPersonne {
 		
 		Personne personne2 = new Personne("Boulanger","Julien", adresse2);
 
+		// affichage du nom et prénom de personne1
+		personne1.afficherNomEntier();
+		// affichage de prénom de personne1
+		System.out.println(personne1.returnPrénom());
+		// modification de nom de personne1
+		personne1.modifierNom("Martin");
+		// affichage du nom modifié et prénom de personne1
+		personne1.afficherNomEntier();
+		
+		personne1.modifierAdresse(adresse2);
+		
 	}
 
 }
