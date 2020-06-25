@@ -6,29 +6,16 @@ import entites.Personne;
 public class TestPersonne {
 
 	public static void main(String[] args) {
-		AdressePostale adresse1 = new AdressePostale();
-		adresse1.numeroRue = 5;
-		adresse1.libelleRue = "rue de l'aiguelongue";
-		adresse1.codePostal = 34000;
-		adresse1.ville = "Montpellier";
+		// instances de la classe AdressePostale
+		AdressePostale adresse1 = new AdressePostale(5, "rue de l'aiguelongue", 34000, "Montpellier");
 		
-		AdressePostale adresse2 = new AdressePostale();
-		adresse2.numeroRue = 10;
-		adresse2.libelleRue = "rue de la répblique";
-		adresse2.codePostal = 69000;
-		adresse2.ville = "Lyon";
+		AdressePostale adresse2 = new AdressePostale(10, "rue de la répblique", 69000, "Lyon");
 		
-		// instance de la classe Personne	
-		Personne personne1 = new Personne();
-		personne1.nom = "Dupont";
-		personne1.prénom = "Julie";
-		personne1.adresse = adresse1;
+		// instances de la classe Personne	
+		Personne personne1 = new Personne("Dupont", "Julie", adresse1);
 		
 		
-		Personne personne2 = new Personne();
-		personne1.nom = "Boulanger";
-		personne1.prénom = "Julien";
-		personne1.adresse = adresse2;
+		Personne personne2 = new Personne("Boulanger","Julien", adresse2);
 
 	}
 
