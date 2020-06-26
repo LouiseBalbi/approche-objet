@@ -12,7 +12,7 @@ public class TestBanque {
 		String numComptePerso = comptePerso.getNumCompte();
 		double soldeComptePerso = comptePerso.getSoldeCompte();
 		
-		System.out.println(comptePerso);
+		System.out.println(comptePerso.toString());
 
 	}
 

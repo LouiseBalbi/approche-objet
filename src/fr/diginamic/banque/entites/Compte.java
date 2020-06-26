@@ -11,6 +11,12 @@ public class Compte {
 		this.soldeCompte = soldeCompte;
 	}
 
+	// redéfinission de la méthode toString
+	@Override
+	public String toString() {
+		return "numéro de compte : " + numCompte + "\n" + "Solde du compte : " + soldeCompte;
+	}
+	
 	// getter et setter :
 	public String getNumCompte() {
 		return numCompte;
@@ -27,7 +33,6 @@ public class Compte {
 	public void setSoldeCompte(double soldeCompte) {
 		this.soldeCompte = soldeCompte;
 	}
-	
 	
 	
 
