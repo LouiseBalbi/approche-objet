@@ -10,4 +10,6 @@ public interface ObjetGeometrique {
 	* @return double
 	*/
 	double surface();
+	
+	String getType();
 }

@@ -17,6 +17,7 @@ public class TestObjetGeometrique {
 		
 		// affichage du périmètre et de la surface de chaque objet
 		for(int i = 0; i < tab.length; i++) {
+			System.out.println(tab[i].getType());
 			System.out.println("Le perimetre est de " + tab[i].perimetre() + " cm");
 			System.out.println("La surface est de : " + tab[i].surface() + " cm2");
 			System.out.println("-----------------");

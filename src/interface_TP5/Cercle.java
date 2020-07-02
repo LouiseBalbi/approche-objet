@@ -22,6 +22,12 @@ public class Cercle implements ObjetGeometrique {
 		return Math.PI * rayon * rayon;
 	}
 	
+	@Override
+	public String getType() {
+		return "Cercle";
+	}
+
+	
 	/**
 	 * @return the rayon
 	 */
@@ -35,6 +41,7 @@ public class Cercle implements ObjetGeometrique {
 	public void setRayon(double rayon) {
 		this.rayon = rayon;
 	}
+
 
 
 

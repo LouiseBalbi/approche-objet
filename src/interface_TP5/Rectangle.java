@@ -23,6 +23,12 @@ public class Rectangle implements ObjetGeometrique {
 	public double surface() {
 		return longueur * largeur;
 	}
+	
+	@Override
+	public String getType() {
+		return "Rectangle";
+	}
+	
 	/**
 	 * @return the longueur
 	 */
