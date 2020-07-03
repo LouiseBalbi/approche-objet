@@ -3,7 +3,7 @@ package listes;
 import java.util.List;
 import java.util.ArrayList;
 
-public class Ville {
+public class Ville implements Comparable<Ville>{
 	
 	private String nom;
 	private int nbHabitants;
@@ -27,6 +27,18 @@ public class Ville {
 		return "Ville [nom=" + nom + ", nbHabitants=" + nbHabitants + "]";
 	}
 
+
+
+	@Override
+	public int compareTo(Ville autre) {
+		if (this.nbHabitants > autre.getNbHabitants()) {
+			return 1;
+		}
+		if(this.nbHabitants < autre.getNbHabitants()) {
+			return -1;
+		}
+		return 0;
+	}
 
 
 	/**
@@ -62,7 +74,6 @@ public class Ville {
 	public void setNbHabitants(int nbHabitants) {
 		this.nbHabitants = nbHabitants;
 	}
-
 
 
 
