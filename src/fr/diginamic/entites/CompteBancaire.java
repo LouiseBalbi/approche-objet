@@ -20,19 +20,19 @@ public class CompteBancaire {
 		this.personne = personne;
 	}
 
-	// méthode permettant de créditer le compte d'un certain montant
+	// mï¿½thode permettant de crï¿½diter le compte d'un certain montant
 	public double crediterMontant(double montant) {
 		return solde + montant;
 	}
 
-	// méthode permettant de débiter le compte d'un certain montant
+	// mï¿½thode permettant de dï¿½biter le compte d'un certain montant
 	public double debiterMontant(double montant) {
 		return solde - montant;
 	}
 	
 	@Override
 	public String toString() {
-		return personne.returnNom() + " " + personne.returnPrénom() + "\n" + "Numéro de compte : " + numeroCompte + "\n" + "Solde : " + solde + " ";
+		return personne.returnNom() + " " + personne.returnPrenom() + "\n" + "Numï¿½ro de compte : " + numeroCompte + "\n" + "Solde : " + solde + " ";
 	}
 
 	/**

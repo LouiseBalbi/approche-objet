@@ -3,54 +3,54 @@ package entites;
 public class Personne {
 
 		public String nom;
-		public String prénom;
+		public String prenom;
 		public AdressePostale adresse;
 		
-		// premier constructeur qui prend en paramètre nom et prénom
-		public Personne(String nom, String prénom) {
+		// premier constructeur qui prend en paramï¿½tre nom et prï¿½nom
+		public Personne(String nom, String prenom) {
 			this.nom = nom;
-			this.prénom = prénom;
+			this.prenom = prenom;
 		}
 
-		// second constructeur qui prend en compte les 3 paramètres nom, prénom et adresse
-		public Personne(String nom, String prénom, AdressePostale adresse) {
+		// second constructeur qui prend en compte les 3 paramï¿½tres nom, prï¿½nom et adresse
+		public Personne(String nom, String prenom, AdressePostale adresse) {
 			this.nom = nom;
-			this.prénom = prénom;
+			this.prenom = prenom;
 			this.adresse = adresse;
 		}
 		
-		// méthode qui affiche le nom en majuscule et le prénom
+		// mï¿½thode qui affiche le nom en majuscule et le prï¿½nom
 		public void afficherNomEntier() {
-			System.out.println(nom.toUpperCase() + " " + prénom);
+			System.out.println(nom.toUpperCase() + " " + prenom);
 
 		}
 		
-		// méthode qui permet de modifier la variable d'instance nom de Personne
+		// mï¿½thode qui permet de modifier la variable d'instance nom de Personne
 		public void modifierNom(String nomModif) {
 			nom = nomModif;
 		}
 		
-		// méthode qui permet de modifier la variable d'instance prénom de Personne
-		public void modifierPrenom(String prénomModif) {
-			prénom = prénomModif;
+		// mï¿½thode qui permet de modifier la variable d'instance prï¿½nom de Personne
+		public void modifierPrenom(String prenomModif) {
+			prenom = prenomModif;
 		}
 		
-		// méthode qui permet de modifier la variable d'instance adresse de Personne
+		// mï¿½thode qui permet de modifier la variable d'instance adresse de Personne
 		public void modifierAdresse(AdressePostale adresseModif) {
 			adresse = adresseModif;
 		}
 		
-		// méthode qui retourne le nom
+		// mï¿½thode qui retourne le nom
 		public String returnNom() {
 			return nom;
 		}
 		
-		// méthode qui retourne le prénom
-		public String returnPrénom() {
-			return prénom;
+		// mï¿½thode qui retourne le prï¿½nom
+		public String returnPrenom() {
+			return prenom;
 		}
 		
-		// méthode qui retourne l'adresse
+		// mï¿½thode qui retourne l'adresse
 		public AdressePostale returnAdresse() {
 			return adresse;
 		}
